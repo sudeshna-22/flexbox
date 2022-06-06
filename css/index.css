@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 4rem;
+    padding: 50px 0;
+    text-align: center;
+    color: #000;
+}
+
+p{
+    text-align: center;
+}
+
+.grand-parent{
+    width: 100vw; height: 100vh;
+    background: #dfe6e9; color: #fff;
+}
+
+.parents {
+    width: 80vw; height: auto; margin: auto;
+    display: flex; justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.child {
+    box-shadow: 0 0 20px #bac3c3;
+    flex: 2 1 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.child:first-child {
+    background: palevioletred;
+}
+
+@media (max-width: 768px) {
+    .grand-parent{height: auto;}
+}
